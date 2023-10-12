@@ -107,3 +107,10 @@ for(let prop in obj){
     console.log(obj[prop]); // John, 20, {street: "123 Main St", city: "New York", state: "NY"}
 }
 ```
+- We also have the `for...of` loop which is used to iterate over iterable objects such as arrays and strings. It is similar to the `for each` loop but it can use `break` and `continue`
+```js
+const array = [1, 2, 3, 4, 5];
+for(let element of array){
+    console.log(element);
+}
+```
