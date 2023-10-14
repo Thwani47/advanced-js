@@ -9,4 +9,10 @@
 - For requests that change some data on the server side (`PUT`, `POST`, `DELETE`, etc), the browser first sends a preflight request (`OPTIONS`) to the server to check if the server allows the request. If the server allows the request, the browser sends the actual request. The preflight request is blocked if the response has the `Access-Control-Allow-Origin` header set to a different origin. 
 - With the preflight response, the server must also return a `Access-Control-Allow-Methods` header that lists the allowed methods
 - If the allowed origin and allowed methods are different from the actual origin and method, the browser will block the request
-[test-cors.org](https://test-cors.org/)
+- [test-cors.org](https://test-cors.org/)
+
+### JSONP
+- JSONP is a way to get around the same-origin policy
+- JSONP solves the same-origin policy just as CORS but it has some limitations
+- JSONP only supports `GET` requests
+-  A script tag does not need to follow the same-origin policy
